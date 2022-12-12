@@ -11,20 +11,25 @@ module.exports = {
         primary: '#2874F1',
         secondary: '#fb641b',
         tertiary: '#ff9f00',
-        plus: '#ffe500'
+        plus: '#ffe500',
+        lightgray: '#f1f3f6'
       }
     },
-  },
-  plugins: [
-    function ({ addUtilities })
-    {
-      const extendUnderline = {
-        '.underline': {
-          'textDecoration': 'underline',
-          'text-decoration-color': 'white',
-        },
+    fontFamily: {
+      roboto: ['Roboto', 'Arial', 'sans-serif']
+    },
+
+    plugins: [
+      function ({ addUtilities })
+      {
+        const extendUnderline = {
+          '.underline': {
+            'textDecoration': 'underline',
+            'text-decoration-color': 'white',
+          },
+        }
+        addUtilities(extendUnderline)
       }
-      addUtilities(extendUnderline)
-    }
-  ],
+    ]
+  }
 }

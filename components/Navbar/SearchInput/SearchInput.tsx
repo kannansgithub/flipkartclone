@@ -5,12 +5,12 @@ type Props = {};
 const SearchInput = (props: Props) => {
   return (
     <>
-      <div className="bg-white flex px-2 rounded-sm">
+      <div className="bg-white flex px-2 h-12 rounded-sm">
         <input
           type="text"
           placeholder="Search for products, brands and more"
           title="Search for products, brands and more"
-          className="h-5 w-96 px-2 mt-4  focus:outline-none"
+          className="w-96 px-2 mt-1  focus:outline-none"
         />
         <Image
           src="/img/icon-search.svg"
